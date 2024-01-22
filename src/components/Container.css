@@ -18,7 +18,6 @@
     margin: 0px auto;
     padding: 10px 20px;
     justify-content: space-between;
-    align-items: center;
 }
 
 .nav-options{
@@ -32,6 +31,14 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    align-items: center;
+    color: white;
+}
+
+.login-btn{
+    max-height: 32px;
+    display: flex;
+    align-items: center;
 }
 
 .mid-section{
@@ -47,8 +54,27 @@
     display: flex;
     flex-direction: column;
     gap:15px;
+    width: 60vw;
 }
 
 .main-section h1{
     font-size: 50px;
+}
+
+.input_email{
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0px auto;
+    color: darkgray;
+    width: 35vw;
+}
+
+.input-group{
+    
+}
+
+.input_email button{
+    width: 15vw;
 }
