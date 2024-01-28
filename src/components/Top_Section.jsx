@@ -74,17 +74,16 @@ function Top_Section() {
               membership.
             </h5>
           </div>
-          <div className="emailInput">
-          <div className="form-floating mb-3">
+
+          <div className="form-floating mb-3 emailInput mt-3">
             <input
               type="email"
-              className="form-control"
+              className="form-control border-secondary "
               id="floatingInput"
-              placeholder="name@example.com"
+              placeholder="Email address"
             />
             <label for="floatingInput">Email address</label>
           </div>
-        </div>
         </div>
       </div>
     </div>
