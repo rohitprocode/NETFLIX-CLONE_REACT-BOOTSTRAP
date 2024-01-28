@@ -1,0 +1,56 @@
+.MainBody{
+background-color: rgb(229, 115, 134);
+width: 100vw;
+height: 100vh;
+}
+
+.container{
+    width: 80vw;
+}
+
+.topSection{
+    position: relative;
+    width: 100vw;
+    color: white;
+    background-image: url(/public/Images/Top-section_BGimage.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.otherNavFeatures{
+    display: flex;
+    gap: 20px;
+}
+
+.dropdown{
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.language{
+    color: white;
+    /* border: 2px solid white; */
+}
+
+.btn.btn-sm.dropdown-toggle.language.btn-outline-secondary{
+    background-color: transparent;
+}
+
+&:has(.btn.btn-sm.dropdown-toggle.language.btn-outline-secondary:focus)
+.dropdown{
+    outline: 2px solid white;
+}
+
+.dropdown-menu{
+    min-width: 6rem;
+    padding: 0px 0px;
+}
