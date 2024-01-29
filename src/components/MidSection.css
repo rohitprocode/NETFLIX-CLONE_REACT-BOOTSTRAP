@@ -3,4 +3,28 @@
   background-color: darkgoldenrod;
   width: 100vw;
   height: 100vh;
+  color: white;
+}
+
+.MidSection .sectionOne .container{
+  background-color: red;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.MidSection .sectionOne .container .container-md{
+ background-color: blue;
+}
+
+
+.MidSection > .sectionOne > .container > .container-md > .heading > h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: white;
+}
+
+.MidSection .sectionOne .container .container-md .heading h5 {
+  font-size: 22px;
 }
