@@ -78,18 +78,18 @@ function Top_Section() {
 
             <div className="inputArea">
               <div className="form-floating mb-3 emailInput mt-3">
-                <input
-                  type="email"
-                  className="form-control border-secondary"
-                  id="floatingInput"
-                  placeholder="Email address"
-                />
-                <label
-                  htmlFor="floatingInput"
-                  className="text-secondary floatingLabel "
-                >
-                  Email address
-                </label>
+                  <input
+                    type="email"
+                    className="form-control border-secondary"
+                    id="floatingInput"
+                    placeholder="Email address"
+                  />
+                  <label
+                    htmlFor="floatingInput"
+                    className="text-secondary floatingLabel "
+                  >
+                    Email address
+                  </label>
               </div>
               <button
                 type="button"

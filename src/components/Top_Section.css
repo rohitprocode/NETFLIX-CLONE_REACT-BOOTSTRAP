@@ -92,13 +92,13 @@
   gap: 15px;
 }
 
-.topSection .container .container-md .heading .heading h1 {
+.topSection > .container > .container-md > .heading > h1 {
   font-size: 45px;
   font-weight: 700;
   color: white;
 }
 
-.topSection .container .container-md .heading .heading h5 {
+.topSection .container .container-md .heading h5 {
   font-size: 22px;
 }
 
@@ -119,15 +119,12 @@
 }
 
 .inputArea .form-floating input {
-  /* width: 25vw; */
+  min-width: 25vw;
   background: transparent;
   border-width: 2px;
-  /* padding: 0px 0px; */
+  z-index: 1;
 }
 
-.inputArea .form-floating input::before{
-  min-width: 30vw;
-}
 
 .inputArea .form-floating input:focus {
   background: transparent;
