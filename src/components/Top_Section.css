@@ -1,113 +1,116 @@
-
-.topSection{
-    position: relative;
-    width: 100vw;
-    color: white;
-    background-image: url(/public/Images/Top-section_BGimage.png);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+.topSection {
+  position: relative;
+  width: 100vw;
+  color: white;
+  background-image: url(/public/Images/Top-section_BGimage.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 97vh;
 }
 
-.container{
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
+.container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
 }
 
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
-.otherNavFeatures{
-    display: flex;
-    gap: 20px;
+.otherNavFeatures {
+  display: flex;
+  gap: 20px;
 }
 
-.dropdown{
-    border-radius: 3px;
-    padding: 2px;
+.dropdown {
+  border-radius: 3px;
+  padding: 2px;
 }
 
-.language{
-    color: white;
-    /* border: 2px solid white; */
+.language {
+  color: white;
+  /* border: 2px solid white; */
 }
 
-.btn.btn-sm.dropdown-toggle.language.btn-outline-secondary{
-    background-color: transparent;
+.btn.btn-sm.dropdown-toggle.language.btn-outline-secondary {
+  background-color: transparent;
 }
 
 &:has(.btn.btn-sm.dropdown-toggle.language.btn-outline-secondary:focus)
-.dropdown{
-    outline: 2px solid white;
+  .dropdown {
+  outline: 2px solid white;
 }
 
-.dropdown-menu{
-    min-width: 6rem;
-    padding: 0px 0px;
+.dropdown-menu {
+  min-width: 6rem;
+  padding: 0px 0px;
 }
 
-.container-md{
-    /* background-color: red; */
-    width: 80vw;
-    position: absolute;
-    top: 37.5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container-md {
+  /* background-color: red; */
+  width: 80vw;
+  position: absolute;
+  top: 37.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.heading{
-    /* background-color: saddlebrown; */
-    margin: 0px auto;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.heading {
+  /* background-color: saddlebrown; */
+  margin: 0px auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.heading h1{
-    font-size: 45px;
-    font-weight: 700;
+.heading h1 {
+  font-size: 45px;
+  font-weight: 700;
 }
 
-.heading h5{
-    font-size: 22px;
+.heading h5 {
+  font-size: 22px;
 }
 
-.form-floating{
-    /* background-color: red; */
-    width: 25vw;
-    color: white;
-    padding: 2px;
-    display: flex;
-    justify-content: center;
-    border-radius: 4px;
-    outline: transparent;
+.form-floating {
+  width: 25vw;
+  color: white;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  outline: transparent;
 }
 
-.form-floating:focus{
-    outline: 2px solid white;
+.form-floating input {
+  background: transparent;
+  border-width: 2px;
+  padding: 0px 25px;
 }
 
-.form-floating input{
-    background: transparent;
-    border-width: 2px;
-    padding: 0px 15px;
+.form-floating input:focus {
+  background: transparent;
+  box-shadow: none;
 }
 
-.form-floating input:focus{
-    background: transparent;
-    box-shadow: none;
+&:has(.form-floating input:focus) .form-floating {
+  outline: 2px solid white;
 }
 
-&:has(.form-floating input:focus)
-.form-floating{
-    outline: 2px solid white;
+.baseline{
+  height: 1.5vh;
+  width: 100vw;
+  background-color:rgb(61, 61, 61);
+  position: absolute;
+  bottom: 0;
 }
+
+

@@ -3,7 +3,7 @@ import "./Top_Section.css";
 
 function Top_Section() {
   return (
-    <div className="topSection">
+    <div className="topSection ">
       <div className="container">
         <div className="nav">
           <div className="MainIcon">
@@ -65,7 +65,7 @@ function Top_Section() {
           </div>
         </div>
 
-        <div className="container-md">
+        <div className="container-md .bg-black.bg-gradient">
           <div className="heading">
             <h1>Unlimited movies, TV shows and more</h1>
             <h5>Watch anywhere. Cancel anytime.</h5>
@@ -78,13 +78,17 @@ function Top_Section() {
           <div className="form-floating mb-3 emailInput mt-3">
             <input
               type="email"
-              className="form-control border-secondary "
+              className="form-control border-secondary"
               id="floatingInput"
               placeholder="Email address"
             />
-            <label for="floatingInput">Email address</label>
+            <label htmlFor="floatingInput" className="text-secondary floatingLabel ">
+              Email address
+            </label>
           </div>
         </div>
+      </div>
+      <div className="baseline">
       </div>
     </div>
   );

@@ -1,4 +1,6 @@
 .MainBody{
 width: 100vw;
 height: 100vh;
+background-color: red;
+overflow-x: hidden;
 }
