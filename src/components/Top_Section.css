@@ -15,7 +15,7 @@
   z-index: 1;
 }
 
-.topSection {
+.linear .topSection {
   position: relative;
   width: 100vw;
   color: white;
@@ -26,7 +26,7 @@
   height: 97vh;
 }
 
-.container {
+.topSection .container {
   width: 80vw;
   display: flex;
   flex-direction: column;
@@ -34,24 +34,24 @@
   height: 95vh;
 }
 
-.nav {
+.container .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
 
-.otherNavFeatures {
+.nav .otherNavFeatures {
   display: flex;
   gap: 20px;
 }
 
-.dropdown {
+.otherNavFeatures .dropdown {
   border-radius: 3px;
   padding: 2px;
 }
 
-.language {
+.dropdown .language {
   color: white;
 }
 
@@ -59,17 +59,17 @@
   background-color: transparent;
 }
 
-&:has(.btn.btn-sm.dropdown-toggle.language.btn-outline-secondary:focus)
+&:has(.language:focus)
   .dropdown {
   outline: 2px solid white;
 }
 
-.dropdown-menu {
+.dropdown .dropdown-menu {
   min-width: 6rem;
   padding: 0px 0px;
 }
 
-.container-md {
+.topSection .container .container-md {
   width: 80vw;
   margin-top: 10vh;
   position: absolute;
@@ -80,9 +80,10 @@
   flex-direction: column;
   align-items: center;
   margin-top: 20%;
+  z-index: 1;
 }
 
-.heading {
+.topSection .container .container-md .heading {
   margin: 0px auto;
   align-items: center;
   text-align: center;
@@ -91,12 +92,13 @@
   gap: 15px;
 }
 
-.heading h1 {
+.topSection .container .container-md .heading .heading h1 {
   font-size: 45px;
   font-weight: 700;
+  color: white;
 }
 
-.heading h5 {
+.topSection .container .container-md .heading .heading h5 {
   font-size: 22px;
 }
 
@@ -107,7 +109,7 @@
   gap: 10px;
 }
 
-.form-floating {
+.inputArea .form-floating {
   color: white;
   padding: 2px;
   display: flex;
@@ -116,24 +118,32 @@
   outline: transparent;
 }
 
-.form-floating input {
-  width: 30vw;
+.inputArea .form-floating input {
+  /* width: 25vw; */
   background: transparent;
   border-width: 2px;
-  padding: 0px 25px;
+  /* padding: 0px 0px; */
 }
 
-.form-floating input:focus {
+.inputArea .form-floating input::before{
+  min-width: 30vw;
+}
+
+.inputArea .form-floating input:focus {
   background: transparent;
   box-shadow: none;
   color: white;
 }
 
-&:has(.form-floating input:focus) .form-floating {
+&:has(.inputArea .form-floating input:focus) .inputArea .form-floating {
   outline: 2px solid white;
 }
 
-.baseline{
+.inputArea .submitBtn{
+  padding: 2vh 3vw;
+}
+
+.topSection .baseline{
   height: 1.5vh;
   width: 100vw;
   background-color:rgb(61, 61, 61);
@@ -141,4 +151,14 @@
   bottom: 0;
 }
 
+@media (min-width:320px) and (max-width:768px) {
+  .inputArea{
+    flex-direction: column;
+  }
+  
+.topSection .container .container-md {
+  top: 20%;
+  bottom: 10%;
+}
+}
 

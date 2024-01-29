@@ -93,8 +93,7 @@ function Top_Section() {
               </div>
               <button
                 type="button"
-                className="btn btn-lg py-3 px-4
-            fw-bold btn-danger"
+                className="btn btn-lg fw-bold btn-danger submitBtn"
               >
                 Get Started &gt;
               </button>
