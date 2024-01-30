@@ -1,6 +1,6 @@
 import React from "react";
-import ImageTV from "./tv-Image.png"
-import VideoTV from "./"
+import ImageTV from "./tv-Image.png";
+import VideoTV from "./Netflix_TV.mp4";
 
 function SectionOne() {
   return (
@@ -15,13 +15,16 @@ function SectionOne() {
             </h5>
           </div>
           <div className="AnimationTV">
-           <img src={ImageTV} alt="NetflixTV" srcset="" />
-           <video src={VideoTV}></video>
+            <div className="displayContent">
+              <img src={ImageTV} alt="NetflixTV" srcset=""/>
+              <video width="400" autoPlay muted loop >
+                <source src={VideoTV} type="video/mp4"/>
+              </video>
+            </div>
           </div>
-        </div> 
+        </div>
         <div className="baseline"></div>
       </div>
-      
     </section>
   );
 }

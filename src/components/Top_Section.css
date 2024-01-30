@@ -148,7 +148,7 @@
   bottom: 0;
 }
 
-@media (min-width:320px) and (max-width:768px) {
+@media (max-width:768px) {
   .inputArea{
     flex-direction: column;
   }
@@ -156,6 +156,17 @@
 .topSection .container .container-md {
   top: 20%;
   bottom: 10%;
+}
+
+
+.topSection > .container > .container-md > .heading > h1 {
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+}
+
+.topSection .container .container-md .heading h5 {
+  font-size: 15px;
 }
 }
 

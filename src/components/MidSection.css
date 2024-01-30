@@ -21,11 +21,12 @@
 }
 
 .MidSection .sectionOne .container .container-md{
- /* background-color: blue; */
+ background-color: blue;
  display: flex;
  justify-content: space-between;
  align-items: center;
  padding: 10px;
+ position: relative;
 
 }
 
@@ -44,11 +45,46 @@
 .MidSection .sectionOne .container .container-md .heading h5 {
   font-size: 22px;
   line-height: 30px;
-} 
+}
+
+.AnimationTV{
+  position: absolute;
+}
+
+.displayContent{
+  background-color: #663399;
+  position: relative;
+  width: 20vw;
+  display: flex;
+}
+
+.displayContent img{
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.displayContent video{
+  width: 10vw;
+  /* position: absolute; */
+  top: 10%;
+  left: 0;
+  margin: 5vw;
+}
 
 .AnimationTV img{
-  width: 40vw;
+  /* width: 40vw;
   position: relative;
+  background: url(../components/Netflix_TV.mp4);
+  z-index: 1; */
+}
+
+.AnimationTV video{
+
+    /* position: absolute;
+    left: 54.8%; */
+    /* left: 50%;
+    top: 26.5%; */
 }
 
 .MidSection .baseline{
