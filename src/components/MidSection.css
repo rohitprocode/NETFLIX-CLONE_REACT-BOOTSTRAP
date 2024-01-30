@@ -5,6 +5,8 @@
   height: 100vh;
   color: white;
   margin: auto;
+  /* padding: 50px; */
+  /* overflow: hidden;   */
 }
 
 .MidSection .sectionOne .container{
@@ -21,11 +23,12 @@
 }
 
 .MidSection .sectionOne .container .container-md{
- background-color: blue;
+ /* background-color: blue; */
  display: flex;
  justify-content: space-between;
  align-items: center;
  padding: 10px;
+ height: 70vh;
  position: relative;
 
 }
@@ -34,57 +37,56 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  text-align: center;
 }
 
 .MidSection > .sectionOne > .container > .container-md > .heading > h1 {
-  font-size: 45px;
+  /* font-size: 45px; */
+  font-size: 3rem;
   font-weight: 700;
   color: white;
+  text-align: start;
+
 }
 
 .MidSection .sectionOne .container .container-md .heading h5 {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 30px;
+  text-align: justify;
+  word-wrap: break-word;
 }
 
-.AnimationTV{
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -52%);
+  width:fit-content;
+  height: fit-content;
+  object-fit: cover;
 }
 
-.displayContent{
-  background-color: #663399;
-  position: relative;
-  width: 20vw;
-  display: flex;
-}
-
-.displayContent img{
-position: absolute;
-top: 0;
-left: 0;
-}
-
-.displayContent video{
-  width: 10vw;
-  /* position: absolute; */
-  top: 10%;
+.content {
+  position: absolute;
+  top: 0;
   left: 0;
-  margin: 5vw;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.AnimationTV img{
-  /* width: 40vw;
-  position: relative;
-  background: url(../components/Netflix_TV.mp4);
-  z-index: 1; */
-}
-
-.AnimationTV video{
-
-    /* position: absolute;
-    left: 54.8%; */
-    /* left: 50%;
-    top: 26.5%; */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .MidSection .baseline{
@@ -93,4 +95,39 @@ left: 0;
   background-color:rgb(61, 61, 61);
   position: absolute;
   bottom: 0;
+}
+
+/* Media Query for smaller devices */
+@media screen and (max-width: 768px) {
+  .container-md{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .MidSection .sectionOne .container .container-md .heading h1 {
+    text-align: center;
+  }
+
+  video {
+      width: 80%;
+  }
+
+  
+}
+
+@media (min-width:769px) and (max-width: 1550px) {
+  video {
+      width: 69%;
+  }
+  .MidSection .sectionOne .container .container-md .heading {
+    padding: 10px;
+    
+  }
+  /* .MidSection .sectionOne .container .container-md .heading h5 {
+    padding: 10px;
+    
+  } */
+
+
+
 }

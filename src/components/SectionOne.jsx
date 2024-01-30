@@ -14,12 +14,12 @@ function SectionOne() {
               Blu-ray players and more.
             </h5>
           </div>
-          <div className="AnimationTV">
-            <div className="displayContent">
-              <img src={ImageTV} alt="NetflixTV" srcset=""/>
-              <video width="400" autoPlay muted loop >
-                <source src={VideoTV} type="video/mp4"/>
-              </video>
+          <div class="video-container">
+            <video muted loop autoPlay>
+              <source src={VideoTV} type="video/mp4" />
+            </video>
+            <div class="content">
+              <img src={ImageTV} alt="Your Image" />
             </div>
           </div>
         </div>
