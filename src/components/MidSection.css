@@ -1,23 +1,39 @@
 .MidSection{
-  /* background-color: black; */
-  background-color: darkgoldenrod;
+  background-color: black;
+  /* background-color: darkgoldenrod; */
   width: 100vw;
   height: 100vh;
   color: white;
+  margin: auto;
 }
 
 .MidSection .sectionOne .container{
-  background-color: red;
+  /* background-color: red; */
   width: 80vw;
-  display: flex;
-  flex-direction: column;
+  padding: 10px;
   position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 50px auto; */
+
 }
 
 .MidSection .sectionOne .container .container-md{
- background-color: blue;
+ /* background-color: blue; */
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px;
+
 }
 
+.MidSection > .sectionOne > .container > .container-md > .heading{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
 .MidSection > .sectionOne > .container > .container-md > .heading > h1 {
   font-size: 45px;
@@ -27,4 +43,18 @@
 
 .MidSection .sectionOne .container .container-md .heading h5 {
   font-size: 22px;
+  line-height: 30px;
+} 
+
+.AnimationTV img{
+  width: 40vw;
+  position: relative;
+}
+
+.MidSection .baseline{
+  height: 1.5vh;
+  width: 100vw;
+  background-color:rgb(61, 61, 61);
+  position: absolute;
+  bottom: 0;
 }

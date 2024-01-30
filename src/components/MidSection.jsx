@@ -6,6 +6,7 @@ function MidSection() {
   return (
     <div className="MidSection">
       <SectionOne/>
+      
     </div>
   );
 }

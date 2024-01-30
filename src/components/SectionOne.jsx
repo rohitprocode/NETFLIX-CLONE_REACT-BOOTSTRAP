@@ -1,11 +1,12 @@
 import React from "react";
-import Image from "./tv-Image.png"
+import ImageTV from "./tv-Image.png"
+import VideoTV from "./"
 
 function SectionOne() {
   return (
     <section className="sectionOne">
       <div className="container">
-        <div className="container-md">
+        <div className="container-md ">
           <div className="heading">
             <h1>Enjoy on your TV</h1>
             <h5>
@@ -14,10 +15,13 @@ function SectionOne() {
             </h5>
           </div>
           <div className="AnimationTV">
-           <img src={Image} alt="" srcset="" />
+           <img src={ImageTV} alt="NetflixTV" srcset="" />
+           <video src={VideoTV}></video>
           </div>
-        </div>
+        </div> 
+        <div className="baseline"></div>
       </div>
+      
     </section>
   );
 }
