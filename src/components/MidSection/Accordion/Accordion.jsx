@@ -13,7 +13,7 @@ function Accordion() {
         <div className={style.DisplayOutput}>
         {
             AccordionData.map((d)=>{
-               return <Display id={d.id} question={d.question} answer={d.answer} />
+               return <Display key={d.id} id={d.id} question={d.question} answer={d.answer} />
             })
         }
         </div>

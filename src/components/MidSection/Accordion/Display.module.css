@@ -9,10 +9,16 @@
     display: flex;
     /* margin: 10px; */
     justify-content: space-between;
-    /* background-color: rgb(66, 65, 65); */
+    background-color: rgb(66, 65, 65);
     /* gap: 10px; */
     padding: 20px;
     align-items: center;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.question:hover{
+    background-color: rgb(93, 92, 92);
 }
 
 .question h4{
@@ -24,4 +30,10 @@ font-weight: 400;
 .question span{
     font-size: 30px;
     /* background-color: red; */
+}
+
+.answer{
+    margin-top: 1px;
+    background-color: rgb(66, 65, 65);
+    padding: 20px;
 }

@@ -12,6 +12,7 @@ function Top_Section() {
           <BrowserRouter>
             <Nav />
             <Routes>
+              <Route path="/home" element={<Nav/>}></Route>
               <Route path="/login" element={<SignIn />}></Route>
             </Routes>
           </BrowserRouter>

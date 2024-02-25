@@ -5,6 +5,7 @@ function Nav() {
   return (
     <div>
       <div className="nav">
+        <Link to="/">
         <div className="MainIcon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -24,6 +25,7 @@ function Nav() {
             ></path>
           </svg>
         </div>
+        </Link>
         <div className="otherNavFeatures">
           <div className="dropdown ">
             <button
