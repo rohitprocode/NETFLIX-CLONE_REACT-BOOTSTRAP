@@ -1,19 +1,30 @@
 .container{
     width: 100vw;
     height: 100vh;
-    /* background-color: rgb(31, 68, 55); */
-    padding: 50px;
+    padding: 10px;
+    /* background-color: rgb(75, 26, 26); */
 }
 
 .accordionBody{
-    /* background-color: blue; */
-    display: flex;
-    justify-content: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
 }
 
 .heading > h1{
   font-size: 3rem;
   font-weight: 900;
+  padding: 20px;
+}
+
+.DisplayOutput{
+  width: 80vw;
+  /* background-color: darkblue; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   text-align: start;
+  padding: 20px 20px;
 }

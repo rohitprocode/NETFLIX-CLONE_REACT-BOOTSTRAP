@@ -1,0 +1,27 @@
+.list{
+    /* display: flex;
+    justify-content: center;
+    gap: 10px; */
+    /* margin: 10px; */
+}
+
+.question{
+    display: flex;
+    /* margin: 10px; */
+    justify-content: space-between;
+    /* background-color: rgb(66, 65, 65); */
+    /* gap: 10px; */
+    padding: 20px;
+    align-items: center;
+}
+
+.question h4{
+/* margin: 20px; */
+/* background-color: darkcyan; */
+font-weight: 400;
+}
+
+.question span{
+    font-size: 30px;
+    /* background-color: red; */
+}
