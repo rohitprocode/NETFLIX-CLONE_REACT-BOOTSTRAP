@@ -13,9 +13,9 @@ function Display({ id, question, answer }) {
   return (
     <div>
       <div className={style.list}>
-        <div className={style.question}>
+        <div onClick={()=>displayAnswer()} className={style.question}>
           <h4>{question}</h4>
-          <span onClick={()=>displayAnswer()}>{ show ? '-' : '+' }</span>
+          <span>{ show ? '-' : '+' }</span>
         </div>
         <div className={style.answer} style={{display: show ? 'block' : 'none'}} >{answer}</div>
         {/* <p>{answer}</p> */}
