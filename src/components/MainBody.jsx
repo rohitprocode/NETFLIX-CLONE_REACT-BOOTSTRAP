@@ -1,7 +1,7 @@
 import React from "react";
 import "./MainBody.css";
-import Top_Section from "./Top_Section";
-import MidSection from "./MidSection";
+import Top_Section from "./TopSection/Top_Section";
+import MidSection from "./MidSection/MidSection";
 
 function MainBody() {
   return (

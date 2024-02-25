@@ -1,0 +1,43 @@
+.MidSection {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+}
+
+.MidSection .container {
+  width: 80vw;
+  padding: 10px;
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MidSection .container .container-md {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 70vh;
+  position: relative;
+}
+
+.MidSection > .container > .container-md > .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+.MidSection > .container > .container-md > .heading > h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: start;
+}
+
+.MidSection .container .container-md .heading h5 {
+  font-size: 19px;
+  line-height: 30px;
+  text-align: start;
+}

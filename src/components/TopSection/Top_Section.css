@@ -19,7 +19,7 @@
   position: relative;
   width: 100vw;
   color: white;
-  background-image: url(/public/Images/Top-section_BGimage.png);
+  background-image: url(/src/Images/Top-section_BGimage.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -149,6 +149,11 @@
 }
 
 @media (max-width:768px) {
+
+  .language span{
+    display: none;
+  }
+
   .inputArea{
     flex-direction: column;
   }
