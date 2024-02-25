@@ -1,0 +1,19 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(31, 68, 55); */
+    padding: 50px;
+}
+
+.accordionBody{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+
+}
+
+.heading > h1{
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: start;
+}

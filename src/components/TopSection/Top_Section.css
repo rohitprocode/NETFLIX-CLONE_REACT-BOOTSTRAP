@@ -10,7 +10,6 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to bottom right, rgb(0, 0, 0,0.2), rgb(0, 0, 0,.2));
   pointer-events: none;
   z-index: 1;
 }
