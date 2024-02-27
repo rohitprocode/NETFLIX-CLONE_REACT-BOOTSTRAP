@@ -101,6 +101,10 @@
   font-size: 22px;
 }
 
+.InputBox{
+  margin-top: 20px;
+}
+
 .inputArea{
   display: flex;
   align-items: center;

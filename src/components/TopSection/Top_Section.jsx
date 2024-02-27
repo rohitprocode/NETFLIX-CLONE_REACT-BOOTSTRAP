@@ -3,6 +3,7 @@ import "./Top_Section.css";
 import Nav from "./Nav";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SignIn from "./SignIn";
+import EmailInputBox from "../EmailInputBox";
 
 function Top_Section() {
   return (
@@ -12,7 +13,7 @@ function Top_Section() {
           <BrowserRouter>
             <Nav />
             <Routes>
-              <Route path="/home" element={<Nav/>}></Route>
+              <Route path="/home" element={<Nav />}></Route>
               <Route path="/login" element={<SignIn />}></Route>
             </Routes>
           </BrowserRouter>
@@ -20,31 +21,9 @@ function Top_Section() {
             <div className="heading">
               <h1>Unlimited movies, TV shows and more</h1>
               <h5>Watch anywhere. Cancel anytime.</h5>
-              <h5>
-                Ready to watch? Enter your email to create or restart your
-                membership.
-              </h5>
             </div>
 
-            <div className="inputArea">
-              <div className="form-floating mb-3 emailInput mt-3">
-                <input
-                  type="email"
-                  className="form-control border-secondary"
-                  id="floatingInput"
-                  placeholder="Email address"
-                />
-                <label htmlFor="floatingInput" className="floatingLabel ">
-                  Email address
-                </label>
-              </div>
-              <button
-                type="button"
-                className="btn btn-lg fw-bold btn-danger submitBtn"
-              >
-                Get Started &gt;
-              </button>
-            </div>
+            <EmailInputBox />
           </div>
         </div>
         <div className="baseline"></div>
